@@ -1,332 +1,104 @@
-# from threading import Thread
-# import logging
-# from time import sleep
-
-
-# class MyThread(Thread):
-#     def __init__(self, group=None, target=None, name=None, args=(), kwargs=None, *, daemon=None):
-#         super().__init__(group=group, target=target, name=name, daemon=daemon)
-#         self.args = args
-#         self.kwargs = kwargs
-
-#     def run(self) -> None:
-#         sleep(2)
-#         logging.debug('Wake up!')
-#         logging.debug(f"args: {self.args}")
-
-
-# if __name__ == '__main__':
-#     logging.basicConfig(level=logging.DEBUG, format='%(threadName)s %(message)s')
-#     for i in range(10):
-#         thread = MyThread(args=(f"Count thread - {i}",))
-#         thread.start()
-#     print('Usefull message')
-
-
-
-# from threading import Thread
-# from time import sleep
-# import logging
-
-
-# class UsefulClass():
-#     def __init__(self, second_num):
-#         self.delay = second_num
-
-#     def __call__(self):
-#         sleep(self.delay)
-#         logging.debug('Wake up!')
-
-
-# if __name__ == '__main__':
-#     logging.basicConfig(level=logging.DEBUG, format='%(threadName)s %(message)s')
-#     for i in range(10):
-#         t2 = UsefulClass(i)
-#         thread = Thread(target=t2)
-#         thread.start()
-#     print('Some stuff')
-
-# from threading import Thread
-# from time import sleep
-# import logging
-
-
-# def example_work(delay):
-#     sleep(delay)
-#     logging.debug('Wake up!')
-
-
-# if __name__ == '__main__':
-#     logging.basicConfig(level=logging.DEBUG, format='%(threadName)s %(message)s')
-#     for i in range(5):
-#         thread = Thread(target=example_work, args=(i,))
-#         thread.start()
-
-
-# from threading import Thread
-# import logging
-# from time import sleep
-
-
-# def example_work(params):
-#     sleep(params)
-#     logging.debug('Wake up!')
-
-
-# if __name__ == '__main__':
-#     logging.basicConfig(level=logging.DEBUG, format='%(threadName)s %(message)s')
-#     logging.debug('Start program')
-#     threads = []
-#     for i in range(5):
-#         thread = Thread(target=example_work, args=(i,))
-#         thread.start()
-#         threads.append(thread)
-
-#     [el.join() for el in threads]
-
-#     logging.debug('End program')
-
-
-
-# from threading import Thread
-# from time import sleep
-# import logging
-
-
-# class UsefulClass:
-#     def __init__(self, second_num):
-#         self.delay = second_num
-
-#     def __call__(self):
-#         sleep(self.delay)
-#         logging.debug('Wake up!')
-
-
-# if __name__ == '__main__':
-#     logging.basicConfig(level=logging.DEBUG, format='%(threadName)s %(message)s')
-#     t2 = UsefulClass(2)
-#     thread = Thread(target=t2)
-#     thread_locking = Thread(target=t2)
-
-#     thread.start()
-#     print(thread.is_alive(), thread_locking.is_alive())
-#     thread_locking.start()
-#     thread.join()
-#     thread_locking.join()
-#     print(thread.is_alive(), thread_locking.is_alive())
-#     print('After all...')
-
-
-
-# from threading import Timer
-# import logging
-# from time import sleep
-
-
-# def example_work():
-#     logging.debug('Start!')
-
-
-# if __name__ == '__main__':
-#     logging.basicConfig(level=logging.DEBUG, format='%(threadName)s %(message)s')
-
-#     first = Timer(0.5, example_work)
-#     first.name = 'First thread'
-#     second = Timer(0.7, example_work)
-#     second.name = 'Second thread'
-#     logging.debug('Start timers')
-#     first.start()
-#     second.start()
-#     sleep(0.7)
-#     second.cancel()
-
-#     logging.debug('End program')
-
-
-# from threading import Thread, RLock
-# import logging
-# from time import time, sleep
-
-# lock = RLock()
-
-
-# def func(locker, delay):
-#     timer = time()
-#     locker.acquire()
-#     sleep(delay)
-#     locker.release()
-#     logging.debug(f'Done {time() - timer}')
-
-
-# if __name__ == '__main__':
-#     logging.basicConfig(level=logging.DEBUG, format='%(threadName)s %(message)s')
-#     t1 = Thread(target=func, args=(lock, 2))
-#     t2 = Thread(target=func, args=(lock, 2))
-#     t1.start()
-#     t2.start()
-#     logging.debug('Started')
-
-
-
-# from threading import Thread, RLock
-# import logging
-# from time import time, sleep
-
-# lock = RLock()
-
-
-# def func(locker, delay):
-#     timer = time()
-#     with locker:
-#         sleep(delay)
-#     logging.debug(f'Done {time() - timer}')
-
-
-# if __name__ == '__main__':
-#     logging.basicConfig(level=logging.DEBUG, format='%(threadName)s %(message)s')
-#     t1 = Thread(target=func, args=(lock, 2))
-#     t2 = Thread(target=func, args=(lock, 2))
-#     t1.start()
-#     t2.start()
-#     logging.debug('Started')
-
-
-# from threading import Semaphore, Thread
-# import logging
-# from time import sleep
-
-
-# def worker(condition):
-#     with condition:
-#         logging.debug(f'Got semaphore')
-#         sleep(1)
-#         logging.debug(f'finished')
-
-
-# if __name__ == '__main__':
-#     logging.basicConfig(level=logging.DEBUG, format='%(threadName)s %(message)s')
-#     pool = Semaphore(1000)
-#     for num in range(10000):
-#         thread = Thread(name=f'Th-{num}', target=worker, args=(pool, ))
-#         thread.start()
-
-
-
-# from threading import Thread, Condition
-# import logging
-# from time import sleep
-
-
-# def worker(condition: Condition):
-#     logging.debug('Worker ready to work')
-#     with condition:
-#         condition.wait()
-#         logging.debug('The worker can do the work')
-
-
-# def master(condition: Condition):
-#     logging.debug('Master doing some work')
-#     sleep(2)
-#     with condition:
-#         logging.debug('Informing that workers can do the work')
-#         condition.notify_all()
-
-
-# if __name__ == '__main__':
-#     logging.basicConfig(level=logging.DEBUG, format='%(threadName)s %(message)s')
-#     condition = Condition()
-#     master = Thread(name='master', target=master, args=(condition,))
-
-#     worker_one = Thread(name='worker_one', target=worker, args=(condition, ))
-#     worker_two = Thread(name='worker_two', target=worker, args=(condition,))
-#     worker_tre = Thread(name='worker_tre', target=worker, args=(condition,))
-#     worker_one.start()
-#     worker_two.start()
-#     worker_tre.start()
-#     master.start()
-
-#     logging.debug('End program')
-
-
-from threading import Thread, Event
-import logging
-from time import sleep
-
-
-# def worker(event: Event):
-#     logging.debug('Worker ready to work')
-#     event.wait()
-#     logging.debug('The worker can do the work')
-
-
-# def master(event: Event):
-#     logging.debug('Master doing some work')
-#     sleep(2)
-#     logging.debug('Informing that workers can do the work')
-#     event.set()
-
-
-# if __name__ == '__main__':
-#     logging.basicConfig(level=logging.DEBUG, format='%(threadName)s %(message)s')
-#     event = Event()
-#     master = Thread(name='master', target=master, args=(event, ))
-
-#     worker_one = Thread(name='worker_one', target=worker, args=(event, ))
-#     worker_two = Thread(name='worker_two', target=worker, args=(event,))
-#     worker_one.start()
-#     worker_two.start()
-#     master.start()
-
-#     logging.debug('End program')
-
-# from random import randint
-# from threading import Thread, Barrier
-# import logging
-# from time import sleep, ctime
-
-
-# def worker(barrier: Barrier):
-#     logging.debug(f'Start thread: {ctime()}')
-#     sleep(randint(1, 3))  # Simulate some work
-#     r = barrier.wait()
-#     logging.debug(f'count: {r}')
-#     logging.debug(f'Barrier overcome: {ctime()}')
-
-
-# if __name__ == '__main__':
-#     logging.basicConfig(level=logging.DEBUG, format='%(threadName)s %(message)s')
-#     barrier = Barrier(5)
-
-#     for num in range(10):
-#         thread = Thread(name=f'Th-{num}', target=worker, args=(barrier, ))
-#         thread.start()
-
-
 
 import concurrent.futures
 import logging
-from random import randint
-from time import sleep
+import shutil
+import os
+import re
+import random
+import sys
+
+from time import time
+from rich.console import Console
+from rich.table import Table
+from args import category_dict, normalize, get_cpu_count
+
+directory = 'E:\Git_Files\__Python_GOIT__\__Web_2_0__\sort\main'
+processes = get_cpu_count()
+console = Console()
+
+def create_folder(category_dict):
+    for name in category_dict:
+        try:
+            os.makedirs(os.path.join(directory, name))
+            logging.info(f"INFO: Create folder {name}")
+        except FileExistsError:
+            logging.info(f"WARNING: Error FileExistsError {name}")
+
+def remove_empty_directories(directory):
+    for dirpath, dirnames, _ in os.walk(directory, topdown=False):
+        for dirname in dirnames:
+            folder_path = os.path.join(dirpath, dirname)
+            if not os.listdir(folder_path):  
+                os.rmdir(folder_path)
+                parts = re.split(re.compile(r'[\\/]'), folder_path)
+                logging.info(f"INFO: Remove folder {normalize(parts[-1])}")
+
+def get_category(files: str):
+    for cat, extension in category_dict.items():
+        if files.split('.')[-1] in extension:
+            logging.info(f"INFO: Category {cat}")
+            return cat
+    logging.info(f"INFO: Category Others")
+    return "Others"
+
+def move_file(file, root, cat):
+    new_name = normalize(file)
+    source_path = os.path.join(root, file)
+    destination_path = os.path.join(root, new_name)
+    new_path = os.path.join(directory, cat, new_name)
+
+    os.replace(source_path, destination_path)
+    try:
+        shutil.move(destination_path, new_path)
+        logging.info(f"INFO: file {new_name} move {cat}")
+    except FileExistsError:
+        logging.info(f"WARNING: Error FileExistsError, move {destination_path} > {new_path}")
 
 
-def greeting(name):
-    logging.debug(f'greeting for: {name}')
-    sleep(randint(0, 3))
-    return f"Hello {name}"
+def main(directory):
+    fil = []
+    roots = []
+    categ = []
 
+    list_table = []
+    max_len = 0
+    style = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white"]
+        
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if max_len < len(file):
+                max_len = len(file)
+            cat = get_category(file)
+            fil.append(file)
+            roots.append(root)
+            categ.append(cat)
+            
+    create_folder(category_dict)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=processes) as executor:
+        executor.map(move_file, fil, roots, categ)
+    remove_empty_directories(directory)
 
-arguments = (
-    "Bill",
-    "Jill",
-    "Till",
-    "Sam",
-    "Tom",
-    "John",
-)
+    for root, _, files in os.walk(directory):
+        if not files:
+            continue
+        parts = re.split(re.compile(r'[\\/]'), root)
+        table = Table(title="")
+        text = f"{parts[-1]}" + " " * (max_len + 3 -len(parts[-1]))
+        table.add_column(text, justify="full", style=random.choice(style), no_wrap=False)
+        for file in files:
+            table.add_row(file)
+        list_table.append(table)
+    return list_table
+    
 
-if __name__ == '__main__':
-    logging.basicConfig(level=logging.DEBUG, format='%(threadName)s %(message)s')
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-        results = list(executor.map(greeting, arguments))
-
-    logging.debug(results)
+if __name__ == "__main__":
+    start_time = time()
+    logging.basicConfig(level=logging.INFO, handlers=[
+    logging.FileHandler("sort_log.txt"),
+    logging.StreamHandler()], format="%(asctime)s %(message)s")
+    table = main(directory)
+    for t in table:
+        console.print(t)
+    end_time = time()
+    logging.info(f"INFO: Workings processes: {processes}")
+    logging.info(f"INFO: Workings times: {end_time - start_time} seconds")
