@@ -6532,3 +6532,153 @@
 2023-09-11 00:38:33,875 INFO: Remove folder main
 2023-09-11 00:38:33,912 INFO: Workings processes: 8
 2023-09-11 00:38:33,913 INFO: Workings times: 0.11700105667114258 seconds
+2023-09-11 00:52:17,398 INFO: Category Images
+2023-09-11 00:52:17,399 INFO: Category Images
+2023-09-11 00:52:17,399 INFO: Category Images
+2023-09-11 00:52:17,400 INFO: Category Documents
+2023-09-11 00:52:17,400 INFO: Category Images
+2023-09-11 00:52:17,401 INFO: Category Images
+2023-09-11 00:52:17,401 INFO: Category Documents
+2023-09-11 00:52:17,401 INFO: Category Documents
+2023-09-11 00:52:17,402 INFO: Category Images
+2023-09-11 00:52:17,402 INFO: Category Others
+2023-09-11 00:52:17,402 INFO: Category Documents
+2023-09-11 00:52:17,403 INFO: Category Images
+2023-09-11 00:52:17,403 INFO: Category Images
+2023-09-11 00:52:17,403 INFO: Category Archives
+2023-09-11 00:52:17,404 INFO: Category Documents
+2023-09-11 00:52:17,404 INFO: Category Documents
+2023-09-11 00:52:17,404 INFO: Category Documents
+2023-09-11 00:52:17,405 INFO: Category Documents
+2023-09-11 00:52:17,405 INFO: Category Documents
+2023-09-11 00:52:17,405 INFO: Category Documents
+2023-09-11 00:52:17,406 INFO: Category Images
+2023-09-11 00:52:17,406 INFO: Category Images
+2023-09-11 00:52:17,406 INFO: Category Images
+2023-09-11 00:52:17,406 INFO: Category Archives
+2023-09-11 00:52:17,407 INFO: Category Images
+2023-09-11 00:52:17,407 INFO: Category Video
+2023-09-11 00:52:17,407 INFO: Category Documents
+2023-09-11 00:52:17,408 INFO: Category Others
+2023-09-11 00:52:17,408 INFO: Category Images
+2023-09-11 00:52:17,408 INFO: Category Images
+2023-09-11 00:52:17,408 INFO: Category Images
+2023-09-11 00:52:17,409 INFO: Category Documents
+2023-09-11 00:52:17,409 INFO: Category Documents
+2023-09-11 00:52:17,409 INFO: Category Others
+2023-09-11 00:52:17,410 INFO: Category Images
+2023-09-11 00:52:17,410 INFO: Category Images
+2023-09-11 00:52:17,410 INFO: Category Images
+2023-09-11 00:52:17,411 INFO: Category Documents
+2023-09-11 00:52:17,411 INFO: Category Archives
+2023-09-11 00:52:17,411 INFO: Category Others
+2023-09-11 00:52:17,412 INFO: Category Archives
+2023-09-11 00:52:17,412 INFO: Category Others
+2023-09-11 00:52:17,412 INFO: Category Python
+2023-09-11 00:52:17,413 INFO: Category Exe
+2023-09-11 00:52:17,413 INFO: Category Exe
+2023-09-11 00:52:17,414 INFO: Category Archives
+2023-09-11 00:52:17,414 INFO: Category Archives
+2023-09-11 00:52:17,414 INFO: Category Documents
+2023-09-11 00:52:17,415 INFO: Category Archives
+2023-09-11 00:52:17,415 INFO: Category Archives
+2023-09-11 00:52:17,415 INFO: Category Others
+2023-09-11 00:52:17,415 INFO: Category Video
+2023-09-11 00:52:17,416 INFO: Category Images
+2023-09-11 00:52:17,416 INFO: Category Archives
+2023-09-11 00:52:17,417 INFO: Category Images
+2023-09-11 00:52:17,417 INFO: Category Archives
+2023-09-11 00:52:17,417 INFO: Category Archives
+2023-09-11 00:52:17,418 INFO: Category Documents
+2023-09-11 00:52:17,418 INFO: Create folder Images
+2023-09-11 00:52:17,419 INFO: Create folder Documents
+2023-09-11 00:52:17,420 INFO: Create folder Audio
+2023-09-11 00:52:17,420 INFO: Create folder Video
+2023-09-11 00:52:17,421 INFO: Create folder Archives
+2023-09-11 00:52:17,422 INFO: Create folder Exe
+2023-09-11 00:52:17,423 INFO: Create folder Python
+2023-09-11 00:52:17,424 INFO: Create folder Html_css
+2023-09-11 00:52:17,424 INFO: Create folder Others
+2023-09-11 00:52:17,431 INFO: file studio_background_concept_abstract_empty_light_gradient_purple_studio_room_background_product.jpg move Images
+2023-09-11 00:52:17,432 INFO: file Snimok_ekrana__7_.png move Images
+2023-09-11 00:52:17,432 INFO: file Snimok_ekrana__8_.png move Images
+2023-09-11 00:52:17,433 INFO: file YAzyk_Go_Dlya_Nachinauschih.pdf move Documents
+2023-09-11 00:52:17,436 INFO: file wesley_tingey_mvLyHPRGLCs_unsplash.jpg move Images
+2023-09-11 00:52:17,436 INFO: file wesley_tingey_mvLyHPRGLCs_unsplash.png move Images
+2023-09-11 00:52:17,437 INFO: file Mozhlivo_vse.pdf move Documents
+2023-09-11 00:52:17,437 INFO: file Navchitisya_vchitisya.pdf move Documents
+2023-09-11 00:52:17,439 INFO: file Snimok_ekrana__3_.png move Images
+2023-09-11 00:52:17,439 INFO: file Novaya_papka.rar move Others
+2023-09-11 00:52:17,440 INFO: file Rekursivnaya_kniga_o_rekursii.pdf move Documents
+2023-09-11 00:52:17,440 INFO: file Snimok_ekrana__1_.png move Images
+2023-09-11 00:52:17,440 INFO: file Snimok_ekrana__2_.png move Images
+2023-09-11 00:52:17,441 INFO: file Novaya_papka.zip move Archives
+2023-09-11 00:52:17,441 INFO: file Odnostrochniki_Python.pdf move Documents
+2023-09-11 00:52:17,442 INFO: file Programmirovanie_na_Python_v_primerah_i_zadachah.pdf move Documents
+2023-09-11 00:52:17,444 INFO: file 150496_main.jpg move Images
+2023-09-11 00:52:17,444 INFO: file 64224e59_967a_41e5_9dbf_63f07b1bade3.png move Images
+2023-09-11 00:52:17,444 INFO: file 64224e59_967a_41e5_9dbf_63f07b1bade3wdwd.png move Images
+2023-09-11 00:52:17,445 INFO: file backgammon_vintage_style_design.zip move Archives
+2023-09-11 00:52:17,445 INFO: file Bot_Page_1_drawio.png move Images
+2023-09-11 00:52:17,445 INFO: file Prodolzhenie_sledyet___mem_online_video_cutter_com.mp4 move Video
+2023-09-11 00:52:17,446 INFO: file Python_3_i_PyQt_6__Razrabotka_prilozhenii.pdf move Documents
+2023-09-11 00:52:17,446 INFO: file recordbook_0_5_1_py3_none_any.whl move Others
+2023-09-11 00:52:17,447 INFO: file sandro_katalina_k1bO_VTiZSs_unsplash.jpg move Images
+2023-09-11 00:52:17,461 INFO: file Snimok_ekrana__9_.png move Images
+2023-09-11 00:52:17,461 INFO: file Snimok_ekrana__10_.png move Images
+2023-09-11 00:52:17,461 INFO: file Algoritmy_neformalno__Instrukciya_dlya_nachinauschih_pitonistov.pdf move Documents
+2023-09-11 00:52:17,462 INFO: file Uchimsya_programmirovat_s_primerami_na_Python.pdf move Documents
+2023-09-11 00:52:17,462 INFO: file Spravochnik_PYTHON__Kratko__bystro__pod_rukoi_.pdf move Documents
+2023-09-11 00:52:17,463 INFO: file Untitled_Project.wmv move Others
+2023-09-11 00:52:17,463 INFO: file Snimok_ekrana__4_.png move Images
+2023-09-11 00:52:17,464 INFO: file Snimok_ekrana__5_.png move Images
+2023-09-11 00:52:17,464 INFO: file Snimok_ekrana__6_.png move Images
+2023-09-11 00:52:17,465 INFO: file decorators_cheatsheet.pdf move Documents
+2023-09-11 00:52:17,465 INFO: file MSIAfterburnerSetup.zip move Archives
+2023-09-11 00:52:17,465 INFO: file sticker.webp move Others
+2023-09-11 00:52:17,466 INFO: file game_dices_night_bright_advertisement_element_gambling_concept_neon_sign.zip move Archives
+2023-09-11 00:52:17,466 INFO: file goit_vs_code_extension_24d69027_8e4a_3f8b_b88c_f2b6b13df057.vsix move Others
+2023-09-11 00:52:17,467 INFO: file main.py move Python
+2023-09-11 00:52:17,467 INFO: file MediaCreationTool22H2.exe move Exe
+2023-09-11 00:52:17,467 INFO: file Docker_Desktop_Installer.exe move Exe
+2023-09-11 00:52:17,468 INFO: file FinalProject.zip move Archives
+2023-09-11 00:52:17,469 INFO: file Final_Project_main.zip move Archives
+2023-09-11 00:52:17,469 INFO: file Burianskyi_Designer__CV_.pdf move Documents
+2023-09-11 00:52:17,469 INFO: file clean.zip move Archives
+2023-09-11 00:52:17,470 INFO: file colorful_vintage_dice_concept.zip move Archives
+2023-09-11 00:52:17,470 INFO: file Creditos_Finales_Meme_Directed_By_Robert_B__Weide_Meme___yarlyk.lnk move Others
+2023-09-11 00:52:17,471 INFO: file Creditos_Finales_Meme_Directed_By_Robert_B__Weide_Meme.mp4 move Video
+2023-09-11 00:52:17,471 INFO: file 1690139410358.jpg move Images
+2023-09-11 00:52:17,471 INFO: file aida64extreme690.zip move Archives
+2023-09-11 00:52:17,472 INFO: file 3d_illustration_blue_purple_futuristic_sci_fi_techno_lights_cool_background.jpg move Images
+2023-09-11 00:52:17,472 INFO: file 3d_rendering_dices_illustration__1_.zip move Archives
+2023-09-11 00:52:17,473 INFO: file 3d_rendering_dices_illustration.zip move Archives
+2023-09-11 00:52:17,473 INFO: file 40_algoritmov__kotorye_dolzhen_znat_kazhdyi_programmist_na_Python.pdf move Documents
+2023-09-11 00:52:17,477 INFO: file Bolshaya_kniga_proektov_Python.pdf move Documents
+2023-09-11 00:52:17,477 INFO: file Zrobi_ce_zaraz.pdf move Documents
+2023-09-11 00:52:17,477 INFO: file Glubokoe_obuchenie__Legkaya_razrabotka_proektov_na_Python_Neironki_.pdf move Documents
+2023-09-11 00:52:17,479 INFO: Remove folder Novaya_papka__4_
+2023-09-11 00:52:17,480 INFO: Remove folder Novaya_papka__5_
+2023-09-11 00:52:17,480 INFO: Remove folder Novaya_papka__6_
+2023-09-11 00:52:17,481 INFO: Remove folder Novaya_papka__10_
+2023-09-11 00:52:17,482 INFO: Remove folder Novaya_papka__11_
+2023-09-11 00:52:17,482 INFO: Remove folder Novaya_papka__12_
+2023-09-11 00:52:17,483 INFO: Remove folder Novaya_papka__13_
+2023-09-11 00:52:17,484 INFO: Remove folder Novaya_papka__14_
+2023-09-11 00:52:17,484 INFO: Remove folder Novaya_papka__15_
+2023-09-11 00:52:17,485 INFO: Remove folder Novaya_papka__8_
+2023-09-11 00:52:17,486 INFO: Remove folder Novaya_papka__9_
+2023-09-11 00:52:17,486 INFO: Remove folder Novaya_papka__16_
+2023-09-11 00:52:17,487 INFO: Remove folder Novaya_papka__17_
+2023-09-11 00:52:17,487 INFO: Remove folder Novaya_papka__18_
+2023-09-11 00:52:17,488 INFO: Remove folder Novaya_papka__19_
+2023-09-11 00:52:17,488 INFO: Remove folder Novaya_papka__20_
+2023-09-11 00:52:17,489 INFO: Remove folder Novaya_papka
+2023-09-11 00:52:17,489 INFO: Remove folder Novaya_papka__2_
+2023-09-11 00:52:17,490 INFO: Remove folder Novaya_papka__3_
+2023-09-11 00:52:17,490 INFO: Remove folder Novaya_papka__7_
+2023-09-11 00:52:17,491 INFO: Remove folder Audio
+2023-09-11 00:52:17,491 INFO: Remove folder Html_css
+2023-09-11 00:52:17,492 INFO: Remove folder main
+2023-09-11 00:52:17,530 INFO: Workings processes: 8
+2023-09-11 00:52:17,531 INFO: Workings times: 0.13194799423217773 seconds

@@ -12,7 +12,12 @@ from rich.console import Console
 from rich.table import Table
 from args import category_dict, normalize, get_cpu_count
 
-directory = 'E:\Git_Files\__Python_GOIT__\__Web_2_0__\sort\main'
+try:
+    directory = sys.argv[1]
+except:
+    print("Error Path")
+    exit()
+    
 processes = get_cpu_count()
 console = Console()
 
